@@ -1,0 +1,16 @@
+.side{
+   float:left;
+   width:50%;
+}
+.main{
+   float:right;
+   width:50%;
+}
+@media  (max-width:1000px){
+   .side{
+      display:none;
+   }
+   .main{
+      width:100%;
+   }
+}
