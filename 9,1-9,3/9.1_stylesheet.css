@@ -1,0 +1,15 @@
+*{
+   background:black;
+   
+}
+
+
+.adjustable {
+   color:white;
+}
+
+@media screen and (max-width:450px){
+   .adjustable{
+      font-size:300px;
+   }
+}
