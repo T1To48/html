@@ -9,7 +9,7 @@
 <body>
    <style>
       *{
-         background:grey;
+         background:#cccccc;
          
       }
       .container{
@@ -38,7 +38,6 @@
          border:solid 3px black;
          padding:1rem;
          position:relative;
-         transition: all 0.5s;
          overflow:hidden;
       }
       .translatey::before{
@@ -63,8 +62,6 @@
          border:solid 3px black;
          padding:1rem;
          position:relative;
-         
-         transition:all 0.5s;
          overflow:hidden; 
       }
       .translatex::before{
@@ -88,8 +85,6 @@
          
          padding:1rem;
          position: relative;
-         
-         transition:all 1s;
          overflow:hidden;
       }
       .rotate::before{
@@ -115,22 +110,46 @@
       .scale{
          border:solid 3px black;
          padding:1rem;
-         transition:all 1s;
-         /* overflow:hidden; */
+         position: relative;
+         overflow:hidden;
       }
       .scale::before{
-         content:'';
+         content:'Scale';
+         color:white;
          position:absolute;
          background:black;
          width: 100%;
          height: 100%;
-         top:0;
+         top:1px;
          left:0;
+         transform:scale(5);
+         opacity: 0;
          transition:all 1s;
+      }
+      .scale:hover::before{
+         transform: scale(1);
+        opacity: 1;
       }
       .skew{
          border:solid 3px black;
          padding:1rem;
+         position:relative;
+         overflow:hidden;
+      }
+      .skew::before{
+         content:'';
+         position:absolute;
+         background:purple;
+         width: 100%;
+         height: 100%;
+         top:0;
+         left:0;
+         transform:skew(0deg) scale(0);
+         transition:all 1s;
+      }
+      .skew:hover::before{
+         transform:skew(180deg);
+         opacity:0.5;
       }
    </style>
 
