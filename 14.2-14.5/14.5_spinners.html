@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+   <style>
+      body{
+         display:flex;
+         justify-content: space-between;
+         margin-top:40vh;
+         margin-left:40vh;
+         background: black;
+         height:100%;
+         position: relative;
+      }
+      .circle{
+         position: absolute;
+         border: solid 4px rgb(145, 143, 143) ;
+         border-radius: 50%;
+         border-top:4px solid orange;
+         height: 10vh;
+         width: 10vh;
+         animation:spin;
+         animation-timing-function: linear;
+         animation-duration:1.3s;
+         animation-iteration-count: infinite;
+
+      }
+      @keyframes spin{
+         0%{transform:rotate(0deg)}
+         100%{transform:rotate(360deg)}
+      }
+      .loading-circle{
+         position: absolute;
+         left:15vh;
+         border: solid 6px rgb(145, 143, 143) ;
+         border-radius: 50%;
+         border-top:6px solid orange;
+         border-left: 2px solid orange;
+         height: 10vh;
+         width: 10vh;
+         animation:spin1;
+         animation-timing-function: linear;
+         animation-duration:1.3s;
+         animation-iteration-count: infinite;
+
+      }
+      @keyframes spin1{
+         0%{transform:rotate(0deg); }
+         50%{transform:rotate(180deg); }
+         100%{transform:rotate(360deg); }
+      }
+      .edit{
+         
+         background-color:white;
+      }
+      .dots{
+         
+      }
+   </style>
+   <div class="container">
+      <div class="circle"></div>
+      <div class="loading-circle"></div>
+      <div class="dots"></div>
+      <div class="loading-dots"></div>
+   </div>
+   <div class="flex items-center justify-center ">
+    <div class="w-14 h-14 border-b-2 border-gray-900 rounded-full animate-spin edit"></div>
+</div>
+</body>
+</html>
