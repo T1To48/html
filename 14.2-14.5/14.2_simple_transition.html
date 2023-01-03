@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <style>
+      :root{
+         --h:30rem;
+      }
+      
+      .box{
+         background:greenyellow;
+         height:var(--h);
+         width:var(--h);
+         position:relative;
+            }
+      .box::after{
+         content:'';
+         background:red;
+         height:var(--h);
+         width:var(--h);
+         position:absolute;
+
+      }
+      .box:hover::after{
+         content:'';
+         background:blue;
+         position:absolute;
+         animation-name:anime;
+         animation-duration: 5s;
+         animation-direction:alternate-reverse;  
+      }
+      @keyframes anime {
+         from{
+            left:30rem;
+         }
+         to{
+            left:0rem;
+         }
+      }
+
+   </style>
+   <div class="box"></div>
+</body>
+</html>
