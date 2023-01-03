@@ -26,35 +26,35 @@
       padding-top: 2rem;
       margin:20%;
       left:20vw;
-                
+       z-index: 20; 
       
    }
-   .cool:before{
+   .cool:after{
+      content:'C00l B0rder';
       border:solid black ;
-      background-color: yellow;
-      content:'';
+      background-color: black;
       position:absolute;
       height: 4rem;
       width:17rem;
-      top:20px;
-      left:-15px;
-      
-      
-
+      top:24px;
+      left:-15px;  
    }
-   .cool:after{
+   .cool:before{
       content:'';
-      position:absolute;
-      height: 40px;
-      width:40px;
-      top:-4px;
-      right:-6px;
-      margin:40vh;
+      position:absolute; 
+      background:black;
+      height: 17rem;
+      width:200px;
+      top:-2rem;
+      left:1.3rem;
    }
    
 
   </style>
   
    <div class="cool">Cool Border</div>
+   <div class="cool-1"></div>
+   <div class="cool-2"></div>
+
 </body>
 </html>
