@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <style>
+      *{
+         margin: 0;
+         padding: 0;
+         
+      }
+      body{
+         width: 100vw;
+         height: 100vh;
+      }
+      .container{
+         display: grid;
+         grid-template-columns: repeat(4,1fr);
+         grid-template-rows: repeat(3,1fr);
+         grid-gap:5px;
+         height: 30%;
+         width: 30%;
+      }
+      .header{
+         background: orangered;
+         grid-column-start: 1;
+         grid-column-end: 5;
+         grid-row-start: 1;
+         grid-row-end: 2;
+      }
+      .main{
+         background: blue;
+         grid-column-start: 1;
+         grid-column-end: 3;
+         grid-row-start: 2;
+         grid-row-end: 4;
+      }
+      .side{
+         background: yellowgreen;
+         grid-column-start: 3;
+         grid-column-end: 5;
+         grid-row-start: 2;
+         grid-row-end: 3;
+      }
+      .foot-1{
+         background: orchid;
+         grid-column-start: 3;
+         grid-column-end: 4;
+         grid-row-start: 3;
+         grid-row-end: 4;
+      }
+      .foot-2{
+         background: orchid;
+         grid-column-start: 4;
+         grid-column-end: 5;
+         grid-row-start: 3;
+         grid-row-end: 4;
+      }
+   </style>
+   <div class="container">
+      <div class="header"></div>
+      <div class="main"></div>
+      <div class="side"></div>
+      <div class="foot-1"></div>
+      <div class="foot-2"></div>
+   </div>
+</body>
+</html>
