@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <style>
+      *{
+         margin: 0;
+         padding: 0;
+      }
+      body{
+         width: 90vw;
+         height: 90vh;
+      }
+      .container{
+         height:100%;
+         width: 100%;
+         display:grid;
+         grid-template-areas:
+         'robot robot garden garden garden kinder kanal kanal'
+         'robot robot garden garden garden kinder kanal kanal'
+         'sunset sunset garden garden garden backyard backyard maseratti'
+         'sunset sunset beach beach wave backyard backyard maseratti'
+         'sunset sunset beach beach timon-bomba timon-bomba timon-bomba maseratti'
+         'drone-view castle castle anime timon-bomba timon-bomba timon-bomba fish'
+         'drone-view castle castle anime timon-bomba timon-bomba timon-bomba fish';
+         grid-gap: 1rem;
+         margin:10px;
+      }
+      
+      .pic1{
+         background: url(./15.4_grid_gallery_imgs/1.jpeg) no-repeat center center/cover;
+         grid-area: robot;
+         max-width: 100%;
+         height: auto;
+      }
+      .pic2{
+         background: url(./15.4_grid_gallery_imgs/2.jpeg) no-repeat center center/cover;
+         max-width: 100%;
+         height: auto;
+         grid-area: garden;
+      }
+      .pic3{
+         background: url(./15.4_grid_gallery_imgs/3.jpeg) no-repeat center center/cover;
+         max-width: 100%;
+         height: auto;
+         grid-area: kinder;
+      }
+      .pic4{
+         background: url(./15.4_grid_gallery_imgs/4.jpeg) no-repeat center center/cover;
+         max-width: 100%;
+         height: auto;
+         grid-area:kanal;
+      }
+      .pic5{
+         background: url(./15.4_grid_gallery_imgs/5.jpeg) no-repeat center center/cover;
+         max-width: 100%;
+         height: auto;
+         grid-area:sunset;
+      }
+      .pic6{
+         background: url(./15.4_grid_gallery_imgs/6.jpeg) no-repeat center center/cover;
+         max-width: 100%;
+         height: auto;
+         grid-area:beach;
+      }
+      .pic7{
+         background: url(./15.4_grid_gallery_imgs/7.jpeg) no-repeat center center/cover;
+         max-width: 100%;
+         height: auto;
+         grid-area:wave;
+      }
+      .pic8{
+         background: url(./15.4_grid_gallery_imgs/8.jpeg) no-repeat center center/cover;
+         max-width: 100%;
+         height: auto;
+         grid-area:backyard;
+      }
+      .pic9{
+         background: url(./15.4_grid_gallery_imgs/9.jpeg) no-repeat center center/cover;
+         max-width: 100%;
+         height: auto;
+
+         grid-area:maseratti;
+      }
+      .pic10{
+         background: url(./15.4_grid_gallery_imgs/10.jpeg) no-repeat center center/cover;
+         max-width: 100%;
+         height: auto;
+
+         grid-area:drone-view;
+      }
+      .pic11{
+         background: url(./15.4_grid_gallery_imgs/11.jpeg) no-repeat center center/cover;
+         max-width: 100%;
+         height: auto;
+
+         grid-area:castle;
+      }
+      .pic12{
+         background: url(./15.4_grid_gallery_imgs/12.jpeg) no-repeat center center/cover;
+         max-width: 100%;
+         height: auto;
+
+         grid-area:anime;
+      }
+      .pic13{
+         background: url(./15.4_grid_gallery_imgs/13.jpeg) no-repeat center center/cover;
+         max-width: 100%;
+         height: auto;
+
+         grid-area: timon-bomba;
+      }
+      .pic14{
+         background: url(./15.4_grid_gallery_imgs/14.jpeg) no-repeat center center/cover;
+         max-width: 100%;
+         height: auto;
+
+         grid-area: fish;
+      }
+      @media screen and (max-width: 800px){
+         .container{
+         grid-template-areas:
+         /* 'robot robot garden garden garden'
+         'robot robot garden garden garden' 
+         'sunset sunset garden garden garden' 
+         'sunset sunset beach beach wave' 
+         'sunset sunset beach beach anime' 
+         'drone-view castle castle anime' 
+         'drone-view castle castle ' 
+         'kinder kanal kanal '
+         'kinder kanal kanal '
+         'backyard backyard maseratti'
+         'backyard backyard maseratti'
+         'timon-bomba timon-bomba timon-bomba maseratti'
+         'timon-bomba timon-bomba timon-bomba fish'
+         'timon-bomba timon-bomba timon-bomba fish';
+      } */
+      }
+
+   </style>
+   <div class="container">
+      <div class="pic1"></div>
+      <div class="pic2"></div>
+      <div class="pic3"></div>
+      <div class="pic4"></div>
+      <div class="pic5"></div>
+      <div class="pic6"></div>
+      <div class="pic7"></div>
+      <div class="pic8"></div>
+      <div class="pic9"></div>
+      <div class="pic10"></div>
+      <div class="pic11"></div>
+      <div class="pic12"></div>
+      <div class="pic13"></div>
+      <div class="pic14"></div>
+   </div>
+</body>
+</html>
