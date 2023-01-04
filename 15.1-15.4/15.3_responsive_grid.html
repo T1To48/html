@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <style>
+      *{
+         box-sizing: border-box;
+         margin: 0;
+         padding: 0;
+         
+      }
+      body{
+         width: 100vw;
+         height: 100vh;
+      }
+      .container{
+         display: grid;
+         grid-template-areas:
+         'header header header '
+         'sidebar content sidebar-2'
+         'footer footer footer';
+         grid-gap:5px;
+         height: 30%;
+         width: 80%;
+         margin:10px;
+      }
+      .header{
+         background: orangered;
+         border-radius: 10px;
+         grid-area: header;
+         color:white;
+         padding:10px 10px 0;
+      }
+      .sidebar{
+         background: darkcyan;
+         border-radius: 10px;
+         grid-area: sidebar;
+         color:white;
+         padding:10px 10px 0;
+      }
+      .content{
+         background: green;
+         border-radius: 10px;
+         grid-area: content;
+         color:white;
+         padding:10px 10px 0;
+         
+      }
+      .sidebar-2{
+         background: orchid;
+         border-radius: 10px;
+         grid-area: sidebar-2;
+         color:white;
+         padding:10px 10px 0;
+      }
+      .footer{
+         background: orange;
+         border-radius: 10px;
+         grid-area: footer;
+         color:white;
+         padding:10px 10px 0;
+      }
+      /* Tablets */
+      @media screen and (min-width: 768px) and (max-width: 1280px){
+         .container{
+         grid-template-areas:
+         'header header header header '
+         'sidebar content content content'
+         'sidebar-2 sidebar-2 sidebar-2 sidebar-2'
+         'footer footer footer footer';
+      }
+      }
+      @media screen and (max-width: 767px){
+         .container{
+         width:60%;
+         grid-template-areas:
+         'header header'
+         'sidebar sidebar'
+         'content content'
+         'sidebar-2 sidebar-2'
+         'footer footer';
+      }
+      }
+
+      </style>
+   <div class="container">
+      <div class="header"><h1>Header</h1></div>
+      <div class="sidebar"><h2>sidebar</h2></div>
+      <div class="content"><h2>content</h2>Lorem, ipsum dolor sit amet consectetur 
+         adipisicing elit.Omnis nulla fugiat ipsum dolore saepe! Nihil!</div>
+      <div class="sidebar-2"><h2>sidebar-2</h2></div>
+      <div class="footer"><h2>footer</h2></div>
+   </div>
+</body>
+</html>
